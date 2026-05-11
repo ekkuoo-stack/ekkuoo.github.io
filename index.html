@@ -28,22 +28,20 @@
 
     h1 {
       font-size: 7rem;
-      background-color: #F6E27A
-      background-image:
-       linear-grandient(
-         45deg,
-         rgba(225,225,225,0.25) 25%
-         transparent 25%
-         transparent 50%,
-         rgba(225,225,225,0.25) 50%
-         rgba(225,225,225,0.25) 75%
-         transparent 75%,
-         transparent
-         );
-      background-size:  20px 20px
+      color: #F6E27A;
 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      text-shadow: 
+       2px 2px 0px white,
+       4px 4px 0px rgba (225,225,225,0.3);
+        
+      background-image:
+      repeating-linear-grandient(
+         45deg,
+         rgba(225,225,225,0.25) 0px
+         rgba(225,225,225,0.25) 10px
+         transparent 10px,
+         transparent 20px
+         );
     }
         
                         
