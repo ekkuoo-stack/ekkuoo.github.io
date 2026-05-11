@@ -6,20 +6,34 @@
   <title>My Website</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-image:url('cool blue wallpaper.jpg');
-      grond-size: cover;
-      ground-position: center;
-      ground-repeat: no-repeat;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background-color: #cfe8ff;
+
+  background-image:
+    linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,0.4) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.4) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.4) 75%);
+
+  background-size: 80px 80px;
+  background-position:
+    0 0,
+    0 40px,
+    40px -40px,
+    -40px 0px;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+
+}
 
     .container {
       max-width: 700px;
