@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Now Playing</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      background-image: url('cool blue wallpaper.jpg');
+      background-size: cover;
+      background-position: center;
+
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #F6E27A;
+      font-size: 4rem;
+      margin-bottom: 40px;
+
+      text-shadow:
+        2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .record {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+
+      background:
+        radial-gradient(circle, #222 0%, #000 60%, #111 100%);
+
+      position: relative;
+
+      animation: spin 4s linear infinite;
+
+      box-shadow:
+        0 0 40px rgba(0,0,0,0.6);
+    }
+
+    .record::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 120px;
+      height: 120px;
+
+      border-radius: 50%;
+
+      background-image: url('cover.jpg');
+      background-size: cover;
+      background-position: center;
+
+      border: 6px solid #F6E27A;
+    }
+
+    .record::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 18px;
+      height: 18px;
+
+      border-radius: 50%;
+      background: white;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    audio {
+      margin-top: 40px;
+      width: 320px;
+    }
+
+    p {
+      color: baby pink;
+      font-size: 1.3rem;
+      margin-top: 20px;
+
+      text-shadow:
+        2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Now Playing</h1>
+
+  <div class="record"></div>
+
+  <p> Bang!- AFTERSCHOOL</p>
+
+  <audio controls autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
