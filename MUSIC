@@ -16,7 +16,7 @@
       align-items: center;
       flex-direction: column;
 
-      background-image: url('cool blue wallpaper.jpg');
+      background-image: url('background pc.jpg');
       background-size: cover;
       background-position: center;
 
@@ -63,7 +63,7 @@
 
       border-radius: 50%;
 
-      background-image: url('cover.jpg');
+      background-image: url('ah AFTERSCHOOL.jpg');
       background-size: cover;
       background-position: center;
 
@@ -122,7 +122,7 @@
   <p> Bang!- AFTERSCHOOL</p>
 
   <audio controls autoplay loop>
-    <source src="song.mp3" type="audio/mpeg">
+    <source src="After School- AH [Audio].mp3" type="audio/mpeg">
   </audio>
 
 </body>
