@@ -18,8 +18,12 @@
 
 body{
     background-image:url("BOURBON.jpg");
-background-size:cover;
+background-size:500px;
+    
+background-repeat:repeat;
+    
 background-position:center;
+    
 background-attachment:fixed;
 
     background-color: #f5e6c8;
@@ -36,7 +40,7 @@ background-attachment:fixed;
     display:flex;
     min-height:100vh;
 
-    background:rgba(225,225,225,0.15);
+    background:rgba(225,225,225,0.03);
 }
 
 /* LEFT SIDE */
@@ -109,7 +113,7 @@ background-attachment:fixed;
     width:55%;
     display:flex;
     padding:60px;
-    gap:40px;
+    gap:20px;
     background:transparent;
 }
 
@@ -136,20 +140,25 @@ background-attachment:fixed;
 /* EDITABLE BLOG CARD */
 
 .blog-card{
-    background-image:
-    url("afterschoolbackground.jpg");
+    width:85%;
+    
+    background-image:url("afterschoolbackground.jpg");
+    
     background-size:cover;
+    
     background-position:center;
+    
     background-repeat:no-repeat;
 
     border-radius:30px;
+    
     padding:40px;
 
-    min-height:500px
+    min-height:500px;
 
     ovverflow:hidden;
     word-wrap:break-word;
-    backgroud-filter:blur(2px);
+    backdrop-filter:blur(2px);
 }
 
 .blog-card h2{
