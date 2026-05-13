@@ -105,6 +105,7 @@ background-attachment:fixed;
     display:flex;
     padding:60px;
     gap:40px;
+    background:transparent;
 }
 
 /* BLOG */
@@ -132,27 +133,31 @@ background-attachment:fixed;
 .blog-card{
     background-image:
     url("afterschoolbackground.jpg");
-    
     background-size:cover;
     background-position:center;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+
     border-radius:30px;
     padding:40px;
-    min-height: 500px
+
+    min-height:500px
+
+    ovverflow:hidden;
+    word-wrap:break-word;
+    backgroud-filter:blur(2px);
 }
 
 .blog-card h2{
     margin-bottom:15px;
-    font-size:2rem;
-    color: #ffb6c1;
-    text-shadow:0 0 10px
-    rgba(225,225,225,0.6);
+    font-size:4rem;
+    color: #d4a017;
+    text-shadow:0 0 10px rgba(225,225,225,0.6);
 }
 
 .blog-card p{
     line-height:1.8;
     margin-bottom:20px;
-    font-size:0.95rem;
+    font-size:1.2rem;
     color: #8b0000;
 }
 
@@ -174,6 +179,7 @@ background-attachment:fixed;
     width:180px;
     display:flex;
     justify-content:flex-end;
+    padding:40px;
 }
 
 .piano-image{
