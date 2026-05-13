@@ -23,7 +23,7 @@ background-position:center;
 background-attachment:fixed;
     overflow-x:hidden;
     font-family:'haettenschweiler';
-    color:#1d1d1d;
+    color:yellow;
     min-height:100vh;
 }
 
@@ -40,7 +40,7 @@ background-attachment:fixed;
     width:45%;
     position:relative;
     overflow:hidden;
-    background:#f8f5ef;
+    background: none;
 }
 
 /* BIG VINYL */
@@ -130,11 +130,17 @@ background-attachment:fixed;
 /* EDITABLE BLOG CARD */
 
 .blog-card{
-    background:rgba(255,255,255,0.85);
-    backdrop-filter:blur(8px);
+    background-image:
+    linear-gradient(rgba(225,225,225,0.75),
+    rgba(225,225,225,0.75)),
+    url("card.jpg");
+    
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
     border-radius:30px;
-    padding:35px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    padding:40px;
+    min-height: 500px
 }
 
 .blog-card h2{
@@ -169,6 +175,7 @@ background-attachment:fixed;
 }
 
 .piano-image{
+    transform: rotate(-12reg);
     width:100%;
     height:100%;
     object-fit:cover;
