@@ -21,6 +21,9 @@ body{
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
+
+    background-color: #f5e6c8;
+    
     overflow-x:hidden;
     font-family:'haettenschweiler';
     color: #001f54;
@@ -32,6 +35,8 @@ background-attachment:fixed;
 .music-layout{
     display:flex;
     min-height:100vh;
+
+    background:rgba(225,225,225,0.15);
 }
 
 /* LEFT SIDE */
@@ -50,8 +55,8 @@ background-attachment:fixed;
     left:-340px;
     top:50%;
     transform:translateY(-50%);
-    width:780px;
-    height:780px;
+    width:650px;
+    height:650px;
     object-fit:cover;
     border-radius:50%;
     animation:spin 18s linear infinite;
@@ -158,7 +163,7 @@ background-attachment:fixed;
     line-height:1.8;
     margin-bottom:20px;
     font-size:1.2rem;
-    color: #8b0000;
+    color: #d4a017;
 }
 
 /* MUSIC PLAYER */
@@ -176,10 +181,12 @@ background-attachment:fixed;
 /* PIANO SIDE */
 
 .piano-side{
-    width:180px;
+    width:120px;
     display:flex;
-    justify-content:flex-end;
-    padding:40px;
+    justify-content:center;
+
+    position: relative;
+    right:20px;
 }
 
 .piano-image{
@@ -187,8 +194,9 @@ background-attachment:fixed;
     width:100%;
     height:100%;
     object-fit:cover;
-    border-radius:20px 0px 0px 20px;
+    border-radius:20px;
     box-shadow:-10px 0px 20px rgba(0,0,0,0.15);
+    margin-left:-30px;
 }
 
 /* SPINNING */
