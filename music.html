@@ -66,44 +66,39 @@ background-attachment:fixed;
 }
 
 /* POLAROIDS */
-
- .polaroid{
+.polaroid{
     position:absolute;
-
-    width:180px;
-
-    z-index:10;
-
-    filter: drop-shadow(5px 8px 5px rgba(0,0,0,0.18));
+    width:150px;
+    background:white;
+    padding:10px 10px 35px 10px;
+    box-shadow:0 8px 15px rgba(0,0,0,0.25);
+    z-index:3;
 }
 
-/* TOP POLAROID */
-
-.polaroid1{
-    top:40px;
-    left:120px;
-
-    transform: rotate(-12deg);
+.polaroid img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    display:block;
 }
 
-/* MIDDLE POLAROID */
-
-.polaroid2{
-    top:230px;
-    left:170px;
-
-    transform: rotate(14deg);
+.p1{
+    top:80px;
+    right:20px;
+    transform:rotate(-8deg);
 }
 
-/* BOTTOM POLAROID */
-
-.polaroid3{
-    top:430px;
-    left:130px;
-
-    transform: rotate(-10deg);
-}   
-
+.p2{
+    top:300px;
+    right:5px;
+    transform:rotate(10deg);
+}
+    
+.p3{
+    top:520px;
+    right:30px;
+    transform:rotate(-8deg);
+}
 
 /* RIGHT SIDE */
 
@@ -312,17 +307,19 @@ background-attachment:fixed;
         <img src="vinyl.png" class="big-vinyl">
 
         <!-- POLAROIDS -->
-     <div class="polaroid p1">
-    <img src="ah AFTERSCHOOL.jpg" class="polaroid-photo">
+    <!-- POLAROIDS -->
+
+<div class="polaroid p1">
+    <img src="polaroid 1.png" alt="Polaroid photo 1">
 </div>
 
 <div class="polaroid p2">
-    <img src="as 1.jpg" class="polaroid-photo">
+    <img src="polaroid 2.png" alt="Polaroid photo 2">
 </div>
 
 <div class="polaroid p3">
-    <img src="Bang! (Japanese) (1).jpg" class="polaroid-photo">
-</div>   
+    <img src="polaroid 3.png" alt="Polaroid photo 3">
+</div>
 
     </div>
 
